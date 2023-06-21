@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: green;">Retrieve your entire history.</h2>
+    <%for(var i=0;i<x.length;i++){%>
+        <h4 style="color: rgb(15, 209, 15);">S.No : <%=i+1%></h4>
+        <h4>Patient name : <%=x[i]%></h4>
+        <h4>Doctor name : <%=dname%></h4>
+        <h4>Symptoms : <%=y[i]%></h4>
+        <h4>Date of Visit : <%=z[i]%></h4>
+    <%}%>
+</body>
+</html>

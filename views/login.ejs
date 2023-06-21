@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobidoc</title>
+    <style>
+       body {
+      position: relative;
+    }
+
+    .background-text {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      font-size: 50px;
+      color: #000000;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+        .fade-element {
+          opacity: 1;
+          animation-name: fadeOut;
+          animation-duration: 3s;
+          animation-fill-mode: forwards;
+        }
+        @keyframes fadeOut {
+          0% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+        .welcome{
+          background-color: #1BD7BB;
+          padding: 150px 50px 100px 650px;
+        }
+        .LOGINBTN{
+          margin-left: 20px;
+          font-weight: 650;
+          background-color: #08B3E5;
+          border: 1px solid #d5d9d9;
+          border-radius: 8px;
+          box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+          box-sizing: border-box;
+          color: #0f1111;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "Amazon Ember",sans-serif;
+          font-size: 13px;
+          line-height: 29px;
+          padding: 0 10px 0 11px;
+          position: relative;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          vertical-align: middle;
+          width: 100px;
+          margin-left:120px;
+        }
+        .NUSERBTN{
+          font-weight: 650;
+          background-color: #2AF598;
+          border: 1px solid #d5d9d9;
+          border-radius: 8px;
+          box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+          box-sizing: border-box;
+          color: #0f1111;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "Amazon Ember",sans-serif;
+          font-size: 13px;
+          line-height: 29px;
+          padding: 0 10px 0 11px;
+          position: relative;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          vertical-align: middle;
+          margin-top: -89px;
+          margin-left: 45px;
+          width: 100px;}
+        </style>
+         <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const body = document.querySelector("body");
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+      
+            const numTexts = 20; 
+            const texts = Array.from({ length: numTexts }, () => createBackgroundText());
+      
+            texts.forEach(function(text) {
+              body.appendChild(text);
+            });
+      
+            function createBackgroundText() {
+              const text = document.createElement("div");
+              text.classList.add("background-text");
+              text.textContent = "Mobidoc";
+      
+              const randomX = Math.floor(Math.random() * screenWidth);
+              const randomY = Math.floor(Math.random() * screenHeight);
+      
+              text.style.transform = `translate(${randomX}px, ${randomY}px)`;
+      
+              return text;
+            }
+          });
+        </script>
+</head>
+<body class="welcome">
+    <h2 style="color: red;" class="fade-element"><%=d%></h2>
+    <h2 style="font-family:sans-serif;font-size:xx-large;margin-left:-30px;">Welcome to MobiDoc</h2>
+    <br>
+    <br>
+    <form action="/" method="post">
+        Name  <input onkeypress="document.body.style.backgroundColor = '#14C9CB';" style="font-weight: 800;" type="text" name="name"><br><br>
+        Phone <input type="number" name="tel" style="font-weight: 800;"><br><br>
+        Type&nbsp;&nbsp;  <input type="text" name="member"  style="font-weight: 500;width: 195px;" placeholder="Patient/Doctor"><br><br>
+        Password <input onkeypress="document.body.style.backgroundColor = '#0FBED8';" type="password" style="font-weight: 700;" name="pswd"><br><br>
+       <br> <button style="font-weight: 650;" class="LOGINBTN">Login</button>
+    </form>
+    <br>
+    <form action="/newuser"><button class="NUSERBTN">Newuser</button></form>
+</body>
+</html> 

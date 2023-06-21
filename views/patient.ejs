@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.fade-element {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  0% { opacity: 1;background-color: rgba(102, 205, 102, 0.851); }
+  100% { opacity: 0;background-color: whitesmoke; }
+}
+body{
+  background-image: linear-gradient(#B2FFFF, #82EEFD,#63C5DA);
+}
+.card1{
+  border-radius: 8px;
+  padding-left:340px ;
+}
+footer{
+  padding-left: 580px;
+}
+#search{
+          margin-left: 20px;
+          font-weight: 650;
+          background-color: #52B2BF;
+          border: 1px solid #d5d9d9;
+          border-radius: 8px;
+          box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+          box-sizing: border-box;
+          color: #0f1111;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "Amazon Ember",sans-serif;
+          font-size: 13px;
+          line-height: 29px;
+          padding: 0 10px 0 8px;
+          position: relative;
+          margin-left: -36px;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          vertical-align: middle;
+          width: 100px;
+}
+</style>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body >
+    <h6 class="fade-element"><%=d%></h6>
+    <nav id="navbar-example2" class="navbar px-3 mb-3" style="background-color:#B2FFFF ;">
+        <h3 class="navbar-brand">MobiDoc</h3>
+        <form action="/account">
+          <button style="margin-left:950px;border-radius:8px;background-color:#B2FFFF;">Previous Visits</button>
+        </form>
+        <h5 aria-expanded="false"><%=d1%></h5>
+      </nav>
+    <form action="/city" method="post">
+        <h3>Search here for city :</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color: whitesmoke;border-radius:5px;" name="cit" placeholder=".....city">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="search" type="submit">Search</button>
+    </form>
+    <h2>About MobiDoc</h2>
+    <p>
+      MobiDoc is a revolutionary mobile application designed to streamline the process of booking appointments with doctors. With just a few taps on your smartphone, patients can easily find and schedule appointments with their preferred healthcare providers. This innovative app eliminates the hassle of long waiting times and phone calls, allowing users to conveniently access a wide range of medical specialists and clinics. MobiDoc provides a user-friendly interface where patients can search for doctors based on their specialty, location, and availability. Additionally, the app offers real-time updates on appointment availability, ensuring that patients can secure a time slot that suits their needs. With MobiDoc, patients can take control of their healthcare journey, enjoying a seamless and efficient experience in booking appointments with trusted doctors
+      MobiDoc goes beyond simply facilitating appointment bookings. It offers a comprehensive platform where patients can manage their healthcare needs effortlessly. The app provides a personalized patient profile where users can securely store their medical history,etc.
+      In summary, MobiDoc is a comprehensive mobile application that revolutionizes the way patients book appointments with doctors. It simplifies the process, offers personalized features, and empowers patients to actively participate in their healthcare journey. With MobiDoc, accessing quality healthcare has never been more convenient, efficient, and patient-centric.
+    </p>
+    <h3>Reviews By some of our Users</h3>
+    <DIV class="card1">
+    <div class="card" style="width: 48rem;">
+      <img  alt="">
+      <div class="card-body" style=" background-color: #59788E;">
+        <p class="card-text"  >
+      A Game-Changer for Healthcare:</br>
+                I recently had the opportunity to explore MobiDoc, and I must say it is a true game-changer in the healthcare industry. As a practicing doctor, I am always on the lookout for innovative solutions that can enhance patient care and streamline the appointment booking process. MobiDoc exceeded my expectations in every aspect.
+                First and foremost, MobiDoc's user-friendly interface makes it incredibly easy for patients to find and book appointments with doctors. The search functionality allows patients to filter based on specialty, location, ensuring they can connect with the right healthcare provider at their convenience. The seamless navigation and intuitive design truly make booking appointments a breeze.<br>
+                                                                                                                  &nbsp;&nbsp;.... A Review by Dr. ABC
+      </p>
+      </div>
+    </div>
+  
+  &nbsp;&nbsp;&nbsp;
+    <div class="card" style="width: 48rem;">
+      <img alt="">
+      <div class="card-body" style=" background-color: #59788E;">
+        <p class="card-text">MobiDoc has completely transformed the way I approach healthcare. As a patient, I have always struggled with finding convenient appointment times and accessing necessary medical information. However, since discovering MobiDoc, my healthcare experience has been nothing short of exceptional.
+                First and foremost, the ease of booking appointments through MobiDoc is remarkable. With just a few taps on my smartphone, I can quickly browse through a vast selection of doctors, filtering them based on their specialty, location.<br>Rating: ⭐️⭐️⭐️⭐️⭐️ (5/5).<br>
+                &nbsp;&nbsp;&nbsp;.... A Review by anonymous user</p>
+      </div>
+    </div>
+  </DIV>
+    <br>
+    <footer>Terms and Conditions&nbsp;&nbsp;&nbsp;Help Center</footer>
+  </body>
+</html>

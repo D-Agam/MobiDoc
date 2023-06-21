@@ -1,0 +1,25 @@
+{
+  "name": "mobidoc",
+  "version": "1.0.0",
+  "description": "Will Create a web page that will allow users to book apointment with various doctors in their respective cities",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Agam/MobiDoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D-Agam/MobiDoc/issues"
+  },
+  "homepage": "https://github.com/D-Agam/MobiDoc#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.3"
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #0492C2;
+        }
+        button{
+            margin-left: 20px;
+          font-weight: 650;
+          background-color: #52B2BF;
+          border: 1px solid #d5d9d9;
+          border-radius: 8px;
+          box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+          box-sizing: border-box;
+          color: #0f1111;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "Amazon Ember",sans-serif;
+          font-size: 13px;
+          line-height: 29px;
+          padding: 0 10px 0 8px;
+          position: relative;
+          /* margin-left: -36px; */
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          vertical-align: middle;
+          width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dr.<%=dname%> Hospital</h2>
+    <h5>In a world where you can be anything, be kind. Especially to those who dedicate their lives to healing others.</h5>
+    <div>
+    <form action="/done" method="get">
+        <h4>Date: <%=dov%></h4>
+        <h4>Patient name: <%=d1%></h4>
+        <h4>Doctor name: <%=dname%></h4>
+        Patient Age<input style="background-color: whitesmoke;border-radius:5px;width: 20rem;height: 1.6rem;" type="number" name="p_age">
+        Symptoms: <input style="background-color: whitesmoke;border-radius:5px;width: 20rem;height: 6rem;" type="text" name="symptom">
+        <h4>Amount to be paid : Rs.250/-</h4>
+        <h3>Select Slot,Pay and Book Appointment</h3>
+    
+        <button name="value" value="9-10">9-10</button>
+    
+        <button name="value" value="10-11">10-11</button>
+      
+        <button name="value" value="11-12">11-12</button>
+        
+        <button name="value" value="4-5">4-5</button>
+        
+        <button  name="value" value="5-6">5-6</button>
+        
+        <button name="value" value="6-7">6-7</button>
+    </form>
+    </div>
+    <br>
+    <h3>General Advisory</h3>
+    <ul>
+        <li> Maintain a Balanced Diet</li>
+        <li>Stay Hydrated</li>
+        <li>Exercise Regularly</li>
+        <li>Get Sufficient Sleep</li>
+        <li>Practice Good Hygiene</li>
+        <li>Prioritize Mental Healthcare</li>
+    </ul>
+    <footer>
+        <h4>
+            It is always recommended to consult with a qualified healthcare provider for personalized guidance and medical recommendations.
+            This slip is provided solely for reference and does not hold the validity of a medical certificate.<br>
+                                                                                                                --Dr.<%=dname%> Hospital
+        </h4>
+    </footer>
+</body>
+</html>
